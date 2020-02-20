@@ -174,7 +174,6 @@ def nbayes_a():
         else:
             false_pos += 1   
             
-    print("\nSolution for Question 4.a is as follows:")
     total = true_neg + true_pos + false_neg + false_pos
     print("\nTesting Accuracy:", (true_pos + true_neg) / total, "\n")
     
@@ -393,7 +392,6 @@ lacc_te = []
 lacc_tr = []
 lfscore_te = []
 lfscore_tr = []
-print("Solution for Question 4.b is as follows: ")
 # nbayes_b is called for each value of i
 for i in range(-5, 1):
     nbayes_b(2 ** i) 
